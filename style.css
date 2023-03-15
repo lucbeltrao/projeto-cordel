@@ -61,3 +61,42 @@ main > article{
     color: white;
 }
 
+#book{
+    background: black url(imagens/background002.jpg) center center/cover no-repeat scroll;
+    padding: 50px 0px 50px 0px ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+#book > p{
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 400px;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+footer > p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
