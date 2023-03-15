@@ -1,102 +1,101 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-/*
-  Family Font para o título (h1) : 'Passion One'
-  Family Font para o h2, parágrafos (p) e rodapé : 'Verdana'
-*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-*{
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
-header{
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
     background-color: black;
-    text-align: center;
-    height: 300px;
-}
-
-header > h1{
     color: white;
-    font-size: 77.4px;
-    font-family: 'Passion One';
-    padding-top: 90px;
+    text-align: center;
 }
 
-header > h2{
-    color: rgb(179, 177, 177);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
-header > h2 > a{
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
     color: white;
     text-decoration: none;
-
+    font-weight: bolder;
 }
 
-header > h2 > a:hover{
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-main > article{
-    font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 50px 30px 50px 30px;
-    line-height: 55px;
-    font-size: 27px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
-#joaninha{
-    background: black url(imagens/background001.jpg) right center/cover no-repeat scroll;
-    padding: 50px 0px 50px 0px ;
-    margin-top: 50px;
-    margin-bottom: 50px;
+section > p {
+    padding-bottom: 2em;
 }
 
-#joaninha > p{
-    background-color: rgba(0, 0, 0, 0.548);
-    width: 400px;
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-#book{
-    background: black url(imagens/background002.jpg) center center/cover no-repeat scroll;
-    padding: 50px 0px 50px 0px ;
-    margin-top: 50px;
-    margin-bottom: 50px;
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
     
 }
 
-#book > p{
-    background-color: rgba(0, 0, 0, 0.548);
-    width: 400px;
-    color: white;
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    
 }
 
-footer{
+footer {
     background-color: black;
-    height: 50px;
     color: white;
     text-align: center;
-}
-
-footer > p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
     padding: 10px;
-    color: rgb(179, 177, 177);
 }
-
-footer > p > a{
-    text-decoration: none;
-    color: white;
-
-}
-
-footer > p > a:hover{
-    text-decoration: underline;
-}
-
